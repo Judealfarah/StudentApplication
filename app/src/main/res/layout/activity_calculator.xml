@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:foregroundTint="#000000"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/showUserEmailCalcTV"
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center|end"
+                android:text="@string/todo"
+                android:textColor="@color/logoGrey"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/signOutCalcBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/exit" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:visibility="visible"
+            app:srcCompat="@drawable/logo_no_border" />
+
+        <TextView
+            android:id="@+id/gpaLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/gpaText"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCurrentGpa"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:hint="@string/currentGPA"
+            android:importantForAutofill="no"
+            android:inputType="number|numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etPassedCh"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:hint="@string/passedCH"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:id="@+id/tableInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvCourseNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:text="@string/sCourseNo"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:text="@string/sGrade"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvChs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:text="@string/sChs"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvRepeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:text="@string/sRepeat"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvOldGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:text="@string/sOldGrade"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#944D82B8"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/idcourse1"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:gravity="center"
+                    android:text="@string/id"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade1"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch1"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail1"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade1"
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:enabled="false"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse2"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/id2"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade2"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch2"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail2"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade2"
+                    android:layout_width="74dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#944D82B8"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse3"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:gravity="center"
+                    android:text="@string/id3"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade3"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch3"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail3"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade3"
+                    android:enabled="false"
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    tools:ignore="labelFor" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse4"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/id4"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade4"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch4"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail4"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade4"
+                    android:layout_width="74dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#944D82B8"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse5"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:gravity="center"
+                    android:text="@string/id5"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade5"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch5"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail5"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade5"
+                    android:layout_width="86dp"
+
+                    android:enabled="false"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse6"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/id6"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade6"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch6"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail6"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade6"
+                    android:layout_width="74dp"
+                    android:enabled="false"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#944D82B8"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse7"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:gravity="center"
+                    android:text="@string/id7"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade7"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch7"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail7"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade7"
+                    android:layout_width="86dp"
+                    android:enabled="false"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse8"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/id8"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade8"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch8"
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail8"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade8"
+                    android:layout_width="74dp"
+                    android:enabled="false"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/course9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#944D82B8"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/idcourse9"
+                    android:layout_width="82dp"
+                    android:layout_height="45dp"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:gravity="center"
+                    android:text="@string/id9"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/grade9"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <EditText
+                    android:id="@+id/ch9"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+
+                <CheckBox
+                    android:id="@+id/fail9"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:buttonTint="#000000"
+                    android:text="@string/ifFail"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/oldGrade9"
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:background="#15BDD3"
+                    android:backgroundTint="#944D82B8"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    tools:ignore="labelFor" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addCourseBu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/addCourse"
+                android:textAllCaps="false"
+                android:textColor="@color/logoGrey"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/removeBu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/delete_course"
+                android:textAllCaps="false"
+                android:textColor="@color/logoGrey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calculateBu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/buttonshape"
+                android:enabled="false"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/calculate"
+                android:textAllCaps="false"
+                android:textColor="@color/logoGrey"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/resetBu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/Reset"
+                android:textAllCaps="false"
+                android:textColor="@color/logoGrey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

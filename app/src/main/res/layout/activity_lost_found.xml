@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".LostFound">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/showUserEmaillostTV"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center|end"
+            android:text="@string/todo"
+            android:textColor="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/signOutlostBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/exit" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo_no_border" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/lostText"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/lostAddBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/backgroundColor"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/additem3" />
+
+    <ListView
+        android:id="@+id/lost_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

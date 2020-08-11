@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gradproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_no_border"
+        android:label="@string/appname"
+        android:roundIcon="@drawable/logo_no_border"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UsedBooks"></activity>
+        <activity android:name=".CalculatorResults" />
+        <activity android:name=".Thursday" />
+        <activity android:name=".Wednesday" />
+        <activity android:name=".Tuesday" />
+        <activity android:name=".Monday" />
+        <activity android:name=".newUser" />
+        <activity android:name=".addProf" />
+        <activity android:name=".AddCourse" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".addPost" />
+        <activity android:name=".Announcements" />
+        <activity android:name=".adminWelcome" />
+        <activity android:name=".guestWelcome" />
+        <activity android:name=".addItem" />
+        <activity android:name=".LostFound" />
+        <activity android:name=".addBook" />
+        <activity android:name=".Directory" />
+        <activity android:name=".Feed" />
+        <activity android:name=".Calculator" />
+        <activity android:name=".StudyPlan" />
+        <activity android:name=".Affairs" />
+        <activity android:name=".Welcome" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

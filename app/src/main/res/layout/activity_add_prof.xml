@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+
+    tools:context=".addProf">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo_no_border" />
+
+    <ImageView
+        android:id="@+id/uploadPhotoBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/backgroundColor"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/groups" />
+
+        <CheckBox
+            android:id="@+id/noPhotoBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/logoGrey"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/no_photo"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <EditText
+        android:id="@+id/et_profName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/professor_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey" />
+
+    <EditText
+        android:id="@+id/et_profTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/professor_title"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey" />
+
+    <EditText
+        android:id="@+id/et_profEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/professor_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey" />
+
+    <EditText
+        android:id="@+id/et_profOffice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/professor_office"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey" />
+
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:entries="@array/Department" />
+
+    <Button
+        android:id="@+id/saveBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/logoGrey"
+        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cancelBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/cancel"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey" />
+    </LinearLayout>
+
+</ScrollView>

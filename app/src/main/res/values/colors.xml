@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backgroundColor">#c9d9e9</color>
+    <color name="logoBlue">#4d82b8</color>
+    <color name="logoGrey">#47403d</color>
+    <color name="Comp">#c1f9ec</color>
+
+    <color name="babyblue">#B7E8EF</color>
+
+</resources>

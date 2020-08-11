@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".StudyPlan"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/showUserEmailPlanTV"
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center|end"
+                android:text="@string/todo"
+                android:textColor="@color/logoGrey"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/signOutPlanBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/exit" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo_no_border"
+            />
+
+        <TextView
+
+            android:id="@+id/studyPlanTV"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/studyPlan"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Acc_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/accounting" />
+
+            <ImageButton
+                android:id="@+id/Archi_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/architecture" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/accTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Acc_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/archiTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/architecture_engineering"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Bio_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/biomedical" />
+
+            <ImageButton
+                android:id="@+id/Civil_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/civil" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bioTV"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Bio_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/civilTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Civil_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/CE_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/computer_engineering" />
+
+            <ImageButton
+                android:id="@+id/CS_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/computer_science" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CETV"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/CE_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/CSTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/CS_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Visual_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/design_communication" />
+
+            <ImageButton
+                android:id="@+id/Elect_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/electrical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/visualTV"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/visual_design_and_communication"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/electricalTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/electrical_engineering"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Indust_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/industrial_engineering" />
+
+            <ImageButton
+                android:id="@+id/Lgt_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/logistics" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/industTV"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Indust_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/logisticTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/logistic_sciences"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Mng_Bu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/management" />
+
+            <ImageButton
+                android:id="@+id/Mech_Bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/mechanical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mngTV"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Mng_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mechTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/mechanical_engineering"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Pharma_Bu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/pharma" />
+
+        <ImageButton
+            android:id="@+id/GEBC_Bu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/translation" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pharmaTV"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/Pharma_S"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/GEBCTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/german_and_english_for_business_and_communication"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+    </LinearLayout>
+</ScrollView>

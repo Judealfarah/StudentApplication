@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".Schedule">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/showUserEmailScheduleTV"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center|end"
+            android:text="@string/todo"
+            android:textColor="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/signOutScheduleBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/exit" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo_no_border" />
+
+    <TextView
+        android:id="@+id/scheduleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/scheduleText"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/addClassBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/addcourse2" />
+
+        <ImageButton
+            android:id="@+id/resetCBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/delete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/banner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSun"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/sun"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMon"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/mon_"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTues"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/tues_"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvWed"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/wed_"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvThurs"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/thurs_"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/course_name"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/secTV"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/section"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/roomTV"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/course_room"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time1"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sec1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/room1"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#804D82B8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time2"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sec2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/room2"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time3"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sec3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/room3"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#804D82B8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time4"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time4"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sec4"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/room4"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time5"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time5"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name5"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sec5"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/room5"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/class6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#804D82B8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/time6"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/time6"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/name6"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sec6"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/room6"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

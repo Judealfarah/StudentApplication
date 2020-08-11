@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".Directory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/showUserEmailTV"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center|end"
+            android:text="@string/todo"
+            android:textColor="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/signOutBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/exit" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo_no_border" />
+
+    <TextView
+        android:id="@+id/majorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/directory"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="@string/search_by_professor_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey"
+            android:textColorHint="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/searchSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/search322" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

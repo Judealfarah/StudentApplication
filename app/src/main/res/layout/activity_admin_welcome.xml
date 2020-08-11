@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".adminWelcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/showUserEmailAdminTV"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center|end"
+            android:text="@string/todo"
+            android:textColor="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/signOutAdminBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/backgroundColor"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/exit" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/switch_to_student_view"
+        android:textAlignment="textEnd"
+        android:textColor="@color/logoGrey"
+        android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logo_no_border" />
+
+        <LinearLayout
+            android:id="@+id/announcementLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/newAnnouncementBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/blog" />
+
+            <TextView
+                android:id="@+id/announcementTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/create_new_announcement"
+                android:textColor="@color/logoGrey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/directoryLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/addDirectoryBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/directory2" />
+
+            <TextView
+                android:id="@+id/addDirectoryTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/add_to_directory"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manageLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/addStudentBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/backgroundColor"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/student__3_" />
+
+            <TextView
+                android:id="@+id/manageUsers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/manage_students_accounts"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="appname">GJU Student</string>
+    <string name="feedText">News Feed</string>
+    <string name="profileText">Profile</string>
+    <string name="directoryText">Directory</string>
+    <string name="affairsText">Student Affairs</string>
+    <string name="todo">todo</string>
+    <string name="announcementText">Announcements</string>
+    <string name="eventsText">Events</string>
+    <string name="usedText">Used Books</string>
+    <string name="lostText">Lost &amp; Found</string>
+    <string name="planText">Study Plan</string>
+    <string name="gpaText">GPA Calculator</string>
+    <string name="scheduleText">Schedule</string>
+    <string name="groupText">Study Groups</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profileTittle">Profile</string>
+    <string name="nameTittle">Student Name</string>
+    <string name="idTittle">Student ID</string>
+    <string name="majorTittle">Major</string>
+    <string name="departmentTittle">Department</string>
+    <string name="chTitle">Major Credit Hours</string>
+    <string name="passedTitle">Passed Credit Hours</string>
+    <string name="gpaTitle">Cumulative Average</string>
+    <string name="stuName">Student Name</string>
+    <string name="stuID">Student ID</string>
+    <string name="stuMajor">Student Major</string>
+    <string name="department">Department</string>
+    <string name="majorCH">Major Credit Hours</string>
+    <string name="passedCH">Passed Credit Hours</string>
+    <string name="gpa">Cumulative GPA</string>
+    <string name="majorCHnum">145</string>
+    <string name="passedCHnum">104</string>
+    <string name="gpanum">71.2%</string>
+    <string name="signIn">Sign In using your MyGju Credentials</string>
+    <string name="username">Username</string>
+    <string name="password">"Password"</string>
+    <string name="stloginTV">Sign in as Student</string>
+    <string name="adloginTV">Sign in as Admin</string>
+    <string name="guestLogin">Not a GJU Student?\nSign in as a Guest</string>
+    <string name="directory">Directory</string>
+    <string name="schedule">Schedule</string>
+    <string name="dayTime">Time\nDay</string>
+
+    <string name="sun">Sunday</string>
+    <string name="mon">Monday</string>
+    <string name="tues">Tuesday</string>
+    <string name="wed">Wednesday</string>
+    <string name="thurs">Thursday</string>
+
+    <string name="studyPlan">Study Plan Tree</string>
+    <string name="gpa_calculator">Semester GPA\nCalculator</string>
+    <string name="id">1</string>
+    <string name="ifFail">Repeat?</string>
+    <string name="id2">2</string>
+    <string name="id3">3</string>
+    <string name="id4">4</string>
+    <string name="id5">5</string>
+    <string name="id6">6</string>
+    <string name="id7">7</string>
+    <string name="id8">8</string>
+    <string name="id9">9</string>
+
+    <string name="sCourseNo">Course</string>
+    <string name="sGrade">Grade</string>
+    <string name="sChs">CreditHours</string>
+    <string name="sRepeat">Repeated?</string>
+    <string name="sOldGrade">Old Grade</string>
+    <string name="currentGPA">Current GPA</string>
+    <string name="creditHours">Passed Credit Hours</string>
+    <string name="calculate">Calculate</string>
+    <string name="addCourse">Add Course</string>
+    <string name="Reset">Reset</string>
+    <string name="gpaCalcResults">Results</string>
+
+    <string name="Acc_S">International Accounting</string>
+    <string name="Bio_S">Biomedical Engineering</string>
+    <string name="Civil_S">Civil Engineering</string>
+    <string name="CE_S">Computer Engineering</string>
+    <string name="CS_S">Computer Science</string>
+    <string name="Indust_S">Industrial Engineering</string>
+    <string name="Lgt_S">Logistic Sciences</string>
+    <string name="Mng_S">Management Sciences</string>
+    <string name="Pharma_S">Pharmaceutical Engineering</string>
+
+    <string name="usedBookName">Used Book Name*</string>
+    <string name="usedBookDesc">Description\n(State, Version, etc..)</string>
+    <string name="usedBookPrice">Price*</string>
+    <string name="studentEmail">Student Email</string>
+    <string name="studentNum">Student Phone Number </string>
+
+
+    <string name="cancel">Cancel</string>
+
+
+    <string name="usedBookEdit">Edit</string>
+    <string name="usedBookDelete">Delete</string>
+    <string name="title_activity_add_books">AddBooks</string>
+
+    <string name="semester_gpa">Semester GPA</string>
+    <string name="cumulative_gpa">Cumulative GPA</string>
+    <string name="passed_credit_hours">Passed Credit Hours:</string>
+    <string name="done">Done</string>
+    <string name="delete_course">Delete Course</string>
+    <string name="addbook">Add Book</string>
+    <string name="add_lost_item">Add Lost Item</string>
+    <string name="where_was_the_item_found">Where was the item found/lost?</string>
+    <string name="lost_iterm_name">Lost/Found Item Name?</string>
+    <string name="lost_item_description">Lost/Found Item Description?</string>
+    <string name="announcement_title">Announcement Title</string>
+    <string name="announcement_description">Announcement Description</string>
+    <string name="add_post">Add Post</string>
+    <string name="course_name">Course Name</string>
+    <string name="course_room">Room</string>
+    <string name="time1">8:00–9:30</string>
+    <string name="time2">9:30–11:00</string>
+    <string name="time3">11:00–12:30</string>
+    <string name="time4">12:30–2:00</string>
+    <string name="time5">2:00–3:30</string>
+    <string name="time6">3:30–5:00</string>
+    <string name="section">Section</string>
+    <string name="save">Save</string>
+    <string name="professor_name">Professor Name</string>
+    <string name="professor_title">Professor Title</string>
+    <string name="professor_email">Professor Email</string>
+    <string name="professor_office">Professor Office</string>
+    <string name="add_to_directory">Add New Staff to Directory</string>
+    <string name="architecture_engineering">Architecture Engineering</string>
+    <string name="visual_design_and_communication">Visual Design</string>
+    <string name="electrical_engineering">Electrical Engineering</string>
+    <string name="logistic_sciences">Logistic Sciences</string>
+    <string name="mechanical_engineering">Mechanical Engineering</string>
+    <string name="german_and_english_for_business_and_communication">GEBC</string>
+    <string name="sun_">Sun</string>
+    <string name="thurs_">Thurs</string>
+    <string name="wed_">Wed</string>
+    <string name="tues_">Tues</string>
+    <string name="mon_">Mon</string>
+    <string name="add_corresponding_day">Add Corresponding Day</string>
+    <string name="switch_to_student_view">Switch to Student View</string>
+    <string name="switch_to_admin_view">Switch to Admin View</string>
+    <string name="create_a_new_student_account">Manage students accounts</string>
+    <string name="student_password">Student Password</string>
+    <string name="create">Create New Account</string>
+    <string name="delete">Delete</string>
+    <string name="create_new_announcement">Create New Announcement</string>
+    <string name="manage_students_accounts">Manage Student Accounts</string>
+    <string name="time">Time</string>
+    <string name="search_by_professor_name">Search by Professor Name</string>
+    <string name="new_cumulative_gpa">New Cumulative GPA</string>
+    <string name="new_total_of_passed_credit_hours">New Total of Passed Credit Hours</string>
+    <string name="no_photo">No Photo</string>
+    <string name="jds">JDs</string>
+
+    <string-array name="courseDay">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+    </string-array>
+
+    <string-array name="courseTime">
+        <item>8:00–9:30</item>
+        <item>9:30–11:00</item>
+        <item>11:00–12:30</item>
+        <item>12:30–2:00</item>
+        <item>2:00–3:30</item>
+        <item>3:30–5:00</item>
+    </string-array>
+
+    <string-array name="Department">
+        <item>International Accounting</item>
+        <item>Architecture Engineering</item>
+        <item>Biomedical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Computer Science</item>
+        <item>Visual Design and Communication</item>
+        <item>Electrical Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Logistic Sciences</item>
+        <item>Management Sciences</item>
+        <item>Mechanical Engineering</item>
+        <item>Pharmaceutical and Chemical Engineering</item>
+        <item>German and English for Business and Communication</item>
+    </string-array>
+
+
+</resources>

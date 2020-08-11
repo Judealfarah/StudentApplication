@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".addBook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@color/backgroundColor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logo_no_border" />
+
+        <TextView
+            android:id="@+id/space10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/postId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textAlignment="viewStart"
+            android:textColor="@color/logoGrey"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/usedBookNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="@string/usedBookName"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textColorHint="#47403D"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usedBookDescET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="@string/usedBookDesc"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey"
+            android:textColorHint="#47403D"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/usedBookPriceET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="false"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/usedBookPrice"
+                android:inputType="number|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/logoGrey"
+                android:textColorHint="@color/logoGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/jds"
+                android:textColor="@color/logoGrey" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/usedBookCPEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="@string/studentEmail"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usedBookCpPhoneET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="false"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="@string/studentNum"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey"
+            android:textColorHint="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/space14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/addBookBu"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/addbook"
+            android:textAllCaps="false"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/space17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/cancelBu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/cancel"
+            android:textAlignment="center"
+            android:textColor="@color/logoGrey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

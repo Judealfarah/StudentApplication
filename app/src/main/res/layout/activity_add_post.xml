@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".addPost">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo_no_border" />
+
+    <EditText
+        android:id="@+id/announcementTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/announcement_title"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/announcementDesc"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:gravity="start|top"
+        android:hint="@string/announcement_description"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/addPostBu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/add_post"
+        android:textAllCaps="false"
+        android:textColor="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cancelBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/cancel"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textSize="14sp" />
+
+</LinearLayout>

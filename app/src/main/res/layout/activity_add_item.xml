@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".addItem">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo_no_border" />
+
+    <TextView
+        android:id="@+id/space11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <EditText
+        android:id="@+id/lostItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/lost_iterm_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/lostItemDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/lost_item_description"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/lostItemPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/where_was_the_item_found"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lostItemCpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/todo"
+        android:textColor="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/lostItemCpPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:hint="@string/studentNum"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textColorHint="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/addLostBu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/add_lost_item"
+        android:textAllCaps="false"
+        android:textColor="@color/logoGrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/space17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/cancelBu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/cancel"
+        android:textAlignment="center"
+        android:textColor="@color/logoGrey"
+        android:textSize="14sp" />
+
+</LinearLayout>
